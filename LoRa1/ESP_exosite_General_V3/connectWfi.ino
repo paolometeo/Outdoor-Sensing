@@ -10,10 +10,7 @@ byte macData[WL_MAC_ADDR_LENGTH];
 char macString[18];  
 
 //  Memorizza le credenziali delle varie reti
-wifiMulti.addAP("HUAWEI P10 lite", "cicciobello");
-wifiMulti.addAP("WeMake00", "wemakemilano!");
-wifiMulti.addAP("TP-Link_BA34", "cicciobello445");
-
+wifiMulti.addAP("...", "....");  // "SSID", "password"
 
 // Connessione alla rete mediante la ricerca di quella più forte
   if(ECHO)Serial.println("Connecting ...");
