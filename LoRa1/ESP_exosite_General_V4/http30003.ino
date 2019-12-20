@@ -3,8 +3,8 @@ void http30003(){
   
 //  filtro il dato sulla base di quello precedente
 
-   float diff = abs(minni.Data30003.Temp - TempOld);
-   if(diff > 10
+//   float diff = abs(minni.Data30003.Temp - TempOld);
+//   if(diff > 10
    String writeString1 = "SH_vBatTX_1=";
    String writeString2 = "&SH_npacket_1=";
    String writeString3 = "&SH_Temp_1=";

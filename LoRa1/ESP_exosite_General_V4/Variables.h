@@ -1,7 +1,7 @@
 #define MXbuf 50
 #define MXVAR 50
-#define RXpin   0  // 5
-#define TXpin   4  // 0
+#define RXpin   0  //   Quando si usa la Wemos, D0
+#define TXpin   5 //    Quando si usa la Wemos, D5
 uint16_t    ID_TX   = 0;
 uint16_t    npacket = 0;
 uint16_t    vBatTX  = 0;

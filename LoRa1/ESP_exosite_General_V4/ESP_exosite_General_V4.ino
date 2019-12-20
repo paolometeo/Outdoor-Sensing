@@ -10,11 +10,11 @@ cikData for Exosite         ExositeKeys.h
 
 
   Wiring 
-     ProMicroLoRa        ESP8266    Step-up 5 V
-     GND                 GND          OUT-
-     5 (RX)               0  (TX)
-     6 (TX)               5  (RX)
-     RAW                  VCC         OUT+
+     ProMicroLoRa        ESP8266      wemos   Step-up 5 V
+     GND                 GND                    OUT-
+     5 (RX)               5  (TX)       D5
+     6 (TX)               0  (RX)       D0
+     RAW                  VCC                   OUT+
    
 
      Library other than Arduino
@@ -83,15 +83,15 @@ void loop() {
          }else if(primo == 0xAA && flag == 1){  // trova un secondo AA subito dopo il primo
            flag = 2;
            if(ECHO){
-              Serial.println(" inizio ");
+//              Serial.println(" inizio ");
            }
          }else if(primo != 0xAA && flag == 1){  // trova un carattere diverso dopo il primo
            flag = 0;          
          }else if(primo != 0xAA && flag == 2 && primo != 0xFF){
           buf[i] = primo;
           if(ECHO){
-            Serial.print(i); Serial.print(" ");
-            Serial.println(buf[i],HEX);
+//            Serial.print(i); Serial.print(" ");
+//            Serial.println(buf[i],HEX);
           }
           i++;
          }else if(primo == 0xFF && flag == 2){
@@ -100,7 +100,7 @@ void loop() {
           
            //  finisce messaggio
             if(ECHO){
-               Serial.println(" fine");
+//               Serial.println(" fine");
             }
            nbyte = i;
            if(ECHO){
