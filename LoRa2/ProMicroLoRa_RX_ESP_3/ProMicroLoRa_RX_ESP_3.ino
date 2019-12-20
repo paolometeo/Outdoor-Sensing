@@ -16,8 +16,8 @@
  *   ProMicroLoRa        ESP8266          Display LCD    Power USB   Level converter
                                        
  *   GND                 GND               GND            GND             GND
- *   5 (TX)               0 (RX)                
- *   6 (RX)               5 (TX)                
+ *   5 (TX)               5 (RX)                
+ *   6 (RX)               0 (TX)                
  *   +3.3V              +3.3V                                              LV
  *   2                                                                     L1
  *   3                                                                     L2
