@@ -1,8 +1,8 @@
 //  SHT21
 void Print30003(){
       if(ECHO){
-         Serial.print(minni.Data30003.TEMP);Serial.print(" "); 
-         Serial.print(minni.Data30003.UMID);Serial.print(" ");
+         Serial.print(minni.Data30003.Temp);Serial.print(" "); 
+         Serial.print(minni.Data30003.Humi);Serial.print(" ");
          Serial.println();
       }
 //  Display OLED
@@ -22,8 +22,8 @@ void Print30003(){
 //   float VV = float(vBatTX/1000)
    display.print("V");display.print(vBatTX);
    display.print(" T"); 
-   display.print(minni.Data30003.TEMP,1);
+   display.print(minni.Data30003.Temp,1);
    display.print(" U"); 
-   display.print(minni.Data30003.UMID,1);
+   display.print(minni.Data30003.Humi,1);
    display.display();      
 }

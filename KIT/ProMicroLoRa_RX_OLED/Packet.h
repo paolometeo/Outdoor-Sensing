@@ -1,9 +1,7 @@
-//  packets to be received
-
 //  30003;    DHT22        byte 8 + 8; 
 typedef struct packet30003{
-float      UMID;    
-float      TEMP;    
+float      Temp;    
+float      Humi;    
 };
 
 //  30004;    Sonar SR04        byte 8 + 8; 
