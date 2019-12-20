@@ -40,8 +40,8 @@ for(int i = 8; i < Length; i++){
     Serial.print(" Message Decimal ");
     Serial.print(ID_TX);Serial.print(" ");Serial.print(Length);Serial.print(" ");
     Serial.print(vBatTX);Serial.print(" ");Serial.print(npacket);Serial.print(" ");
-    Serial.print(" Temp: ");Serial.print(minni.Data30003.TEMP,1);Serial.print(" ");
-    Serial.print(" Umid: ");Serial.print(minni.Data30003.UMID,1);Serial.print(" ");
+    Serial.print(" Temp: ");Serial.print(minni.Data30003.Temp,1);Serial.print(" ");
+    Serial.print(" Umid: ");Serial.print(minni.Data30003.Humi,1);Serial.print(" ");
     Serial.println();
     }
   //  increase the packet number

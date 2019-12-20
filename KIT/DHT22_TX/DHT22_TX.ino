@@ -1,4 +1,4 @@
-/*  DUST_TX_2
+/*  DHT22_TX
  *  Sketch for transmit Temperature and Humidity
  *  Hardware:  ProMicroLora, DHT22
  *  
@@ -33,8 +33,8 @@ void setup() {
     SensInit();
     
 //   First transmission with all the variables at 0
-    minni.Data30003.UMID = 0;
-    minni.Data30003.TEMP = 0;
+    minni.Data30003.Humi = 0;
+    minni.Data30003.Temp = 0;
     Transmit();
     altDelay(5000);
 }
@@ -44,8 +44,8 @@ void loop() {
   if(ncicli >= ncicliMax){
 
 //  Read DHT22
-    minni.Data30003.UMID = 0;
-    minni.Data30003.TEMP = 0;
+    minni.Data30003.Humi = 0;
+    minni.Data30003.Temp = 0;
     ReadDHT();
 
 // Transmit data
