@@ -7,9 +7,9 @@
 #define TxPin  5
 SoftwareSerial mySerial1(RxPin, TxPin); //RX (blu), TX(verde)   verso ESP8266 
 
-LiquidCrystal_I2C lcd(0x3F,16,2);  // set the LCD address per CigarBox
+//LiquidCrystal_I2C lcd(0x3F,16,2);  // set the LCD address per CigarBox
 //LiquidCrystal_I2C lcd(0x22,16,2);  // set the LCD address to 0x20 for a 16 chars and 2 line display
-//LiquidCrystal_I2C lcd(0x27,16,2);  // valido per i display con interfaccia comprata a parte (cascinet)
+LiquidCrystal_I2C lcd(0x27,16,2);  // valido per i display con interfaccia comprata a parte (cascinet)
 
 //  for ProMicro
 #define RFM95_CS   10
