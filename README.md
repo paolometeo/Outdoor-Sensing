@@ -1,2 +1,2 @@
 # Outdoor-Sensing
- sketches related to the book "Outdoor Sensing" by Paolo Bonelli
+ sketches related to the book "Arduino, LoRa e la difesa dell'ambiente" by Paolo Bonelli
